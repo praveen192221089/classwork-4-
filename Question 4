@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+union my_union {
+  int integer;
+  float floating_point;
+};
+
+int main() {
+  
+  union my_union u;
+  u.integer = 10;
+  u.floating_point = 3.14;
+
+
+  printf("Value of integer field: %d\n", u.integer);
+  printf("Value of floating_point field: %f\n", u.floating_point);
+
+  return 0;
+}
+#include <stdio.h>
+
+union my_union {
+  int integer;
+  float floating_point;
+};
+
+int main() {
+
+  union my_union u;
+  u.integer;
+  u.floating_point;
+  printf("Enter the integer : ");
+  scanf("%d",&u.integer);
+  printf("Enter the floating point : ");
+  scanf("%f",&u.floating_point);
+  printf("Value of integer field: %d\n", u.integer);
+  printf("Value of floating_point field: %f\n", u.floating_point);
+
+  return 0;
+}
